@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+<head><title>RazorPay Web Payment</title></head>
+<body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+   const queryString = window.location.search;
+   console.log(queryString);
+   const urlParams = new URLSearchParams(queryString);
+   const name = urlParams.get('name')
+   const price = urlParams.get('price')
+   const image = urlParams.get('image')
+   //const email = urlParams.get('email')
+  
+      options = {
+         "key": "rzp_test_LFXo0ibUrLWmYv",
+          "amount": price, "currency": "INR",
+          "name":"Local Company",
+          "description": name,
+          "image":image,
+          "handler": function (response){
+             window.parent.postMessage("SUCCESS","*");      //2 
+             alert(response.razorpay_payment_id);
+             alert(response.razorpay_order_id);
+             alert(response.razorpay_signature)    
+          },    
+          "prefill": {        
+             "name": "",        
+             "email":"ajit@gmail.com",
+             "contact":"+91-000000000"  
+           },   
+           "notes": {        
+             "address": "Autofy"    
+          },    
+          "theme": {
+             "color": "#DF0145"    
+          },
+          "modal": {
+            "ondismiss": function(){
+               window.parent.postMessage("MODAL_CLOSED","*");   //3
+            }
+          }
+       };
+       var rzp1 = new Razorpay(options);
+       window.onload = function(e){  //1  
+          rzp1.open();
+          e.preventDefault();
+       }
+
+     </script>
+</body>
+</html>

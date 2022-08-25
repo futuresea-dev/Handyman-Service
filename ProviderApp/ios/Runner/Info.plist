@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>COCODDI PROVIDERS</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>OnDemand Customer</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vk7567668</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb499673981290732</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.29260972141-snmmdk3tn8bgjf32qdaqbql9ak49ll5k</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>499673981290732</string>
+	<key>FacebookDisplayName</key>
+	<string>YOUR_APP_NAME</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-1940646821329426~5212484415</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This allows us to use your Media Library. Media Library will be use only for change your avatar.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app need access to Bluetooth</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app need access to Bluetooth</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This app need access to Your Calendar</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This allows us to use your camera. Camera will be use only for change your avatar.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This app need access to Your Contacts</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This allows us to use your location to find a services around you.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This allows us to use your location to find a services around you.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This allows us to use your location to find a markets arounThis allows us to use your location to find a services around you.d you.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Can I use the mic please?</string>
+	<key>NSMotionUsageDescription</key>
+	<string>This app need access to Motion</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This allows us to use your Photo Library. Photo Library will be use only for change your avatar.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>This app need access to Speech Recognition</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+</dict>
+</plist>

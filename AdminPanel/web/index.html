@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+ <base href="/"> 
+ <!--  <base href="https://www.abg-studio.com/temp/">  -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="uikit">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>HANDYMAN2</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOz5oWyuWCeyh-9c1W5gexDzRakcRP-eM"></script>
+  <meta name="google-signin-client_id" content="416149507323-2pdcpo2ibhsbctq4kde7aucmj40cc503.apps.googleusercontent.com">
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+    <div class="loader">Loading...</div>
+
+<!-- START FACEBOOK SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+     <!-- END FACEBOOK SDK  -->
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+ var firebaseConfig = {
+    apiKey: "AIzaSyBWLfolmF23238cLZSnqO0L0GVpwFcUC2JE9vI",
+    authDomain: "brevix.firebasweeapp.com",
+    databaseURL: "https://brevixew.firebaseio.com",
+    projectId: "brevix",
+    storageBucket: "brevix.appswepot.com",
+    messagingSenderId: "29260972we23141",
+    appId: "1:29260972141:web:d0989232722d8516331837f64",
+    measurementId: "G-V4EYL7112BW8N"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!--    <script type="text/javascript">-->
+<!--    let useHtml = true;-->
+<!--    if(useHtml) {-->
+<!--      window.flutterWebRenderer = "html";-->
+<!--    } else {-->
+<!--      window.flutterWebRenderer = "canvaskit";-->
+<!--    }-->
+<!--  </script>-->
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+</html>
