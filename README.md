@@ -14,7 +14,5 @@ Handyman Service Platform
 
  # Link: https://nullphpscript.com/our-services
 
- or Email us at: info@nullphpscript.com
-
  
  = Thanks for Download from Nullphpscript.com =
